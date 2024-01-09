@@ -1,0 +1,7 @@
+@mixin container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: toRem(16);
+  padding-right: toRem(16);
+  width: 100%;
+}
