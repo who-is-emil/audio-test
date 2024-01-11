@@ -1,12 +1,14 @@
 <template>
   <div class="app">
-    app
+    <AppHero/>
   </div>
 </template>
 
 <script>
 
-export default {
+import AppHero from '@/components/AppHero/AppHero.vue';
 
+export default {
+  components: { AppHero },
 };
 </script>

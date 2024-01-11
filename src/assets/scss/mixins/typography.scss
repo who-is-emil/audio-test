@@ -1,73 +1,56 @@
 @mixin h1 {
-  font-size: toRem(34);
-  line-height: 1.2;
-  font-weight: 600;
+  font-size: toRem(32);
+  line-height: 1.12;
+  font-weight: 700;
 }
 
 @mixin h2 {
-  font-size: toRem(28);
-  line-height: 1.2;
-  font-weight: 600;
+  font-size: toRem(26);
+  line-height: 1.08;
+  font-weight: 700;
 }
 
 @mixin h3 {
-  font-size: toRem(22);
-  line-height: 1.2;
-  font-weight: 600;
-}
-
-@mixin h4 {
-  font-size: toRem(16);
-  line-height: 1.2;
-  font-weight: 600;
+  font-size: toRem(20);
+  line-height: 1.4;
+  font-weight: 700;
 }
 
 @mixin h5 {
+  font-size: toRem(16);
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+@mixin h6 {
   font-size: toRem(14);
-  line-height: 1.2;
-  font-weight: 600;
+  line-height: 1.42;
+  font-weight: 700;
+  letter-spacing: 0.1px;
 }
 
 @mixin text-body {
-  font-size: toRem(14);
-  line-height: 1.2;
-  font-weight: 400;
+  font-size: toRem(16);
+  line-height: 1.5;
+  font-weight: 500;
 }
 
 @mixin text-small {
+  font-size: toRem(14);
+  line-height: 1.58;
+  font-weight: 500;
+}
+
+@mixin text-tiny {
   font-size: toRem(12);
-  line-height: 1.2;
-  font-weight: 400;
-  letter-spacing: -0.36px;
-}
-
-@mixin text-input {
-  font-size: toRem(14);
-  line-height: 1.26;
-  letter-spacing: -0.112px;
-}
-
-@mixin text-button {
-  font-size: toRem(14);
-  line-height: 1.1;
-  letter-spacing: -0.42px;
-}
-
-@mixin text-button-small {
-  font-size: toRem(14);
-  line-height: 1.1;
-  letter-spacing: -0.42px;
+  line-height: 1.33;
+  font-weight: 500;
 }
 
 @mixin text-number {
-  font-size: toRem(28);
-  line-height: 1.2;
-  font-weight: 600;
+  font-size: toRem(40);
+  line-height: 1;
+  font-weight: 500;
 }
 
-@mixin text-number-big {
-  font-size: toRem(34);
-  line-height: 1.2;
-  font-weight: 600;
-}
 

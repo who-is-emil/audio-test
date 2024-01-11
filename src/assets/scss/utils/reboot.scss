@@ -20,8 +20,6 @@ body {
   margin: 0;
   color: $color-black;
   text-align: left;
-
-  @include text-body;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {

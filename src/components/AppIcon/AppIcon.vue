@@ -9,8 +9,6 @@ import InlineSvg from 'vue-inline-svg';
 
 export default {
   name: 'AppIcon',
-  // components: { AppPlus },
-  // components: { IconPlus },
   components: {
     InlineSvg,
   },
