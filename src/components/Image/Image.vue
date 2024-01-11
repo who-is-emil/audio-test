@@ -1,8 +1,7 @@
 <template>
-  <div class="app-image">
+  <div class="image">
     <picture v-if="src">
       <source v-if="srcset" :srcset="srcset">
-      {{ data.src }}
       <img :v-lazy-load="!disableLazy" :src="src" :alt="alt">
     </picture>
   </div>
@@ -10,7 +9,7 @@
 
 <script>
 export default {
-  name: 'AppImage',
+  name: 'Image',
   props: {
     data: {
       type: Object,
@@ -39,5 +38,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "AppImage";
+@import "Image";
 </style>

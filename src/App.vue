@@ -1,14 +1,14 @@
 <template>
   <div class="app">
-    <AppHero/>
+    <Hero/>
   </div>
 </template>
 
 <script>
 
-import AppHero from '@/components/AppHero/AppHero.vue';
+import Hero from '@/components/Hero/Hero.vue';
 
 export default {
-  components: { AppHero },
+  components: { Hero },
 };
 </script>

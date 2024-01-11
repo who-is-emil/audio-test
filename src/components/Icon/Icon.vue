@@ -1,5 +1,5 @@
 <template>
-  <span class="app-icon" :class="className">
+  <span class="icon" :class="className">
    <inline-svg :src="src"/>
   </span>
 </template>
@@ -8,7 +8,7 @@
 import InlineSvg from 'vue-inline-svg';
 
 export default {
-  name: 'AppIcon',
+  name: 'Icon',
   components: {
     InlineSvg,
   },
@@ -32,5 +32,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "AppIcon";
+@import "Icon";
 </style>

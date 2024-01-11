@@ -1,4 +1,4 @@
-.app-button {
+.button {
   $root: &;
 
   position: relative;
@@ -36,6 +36,10 @@
   &:disabled,
   &--disabled {
     background-color: #36588B;
+  }
+
+  &__icon {
+    margin-right: toRem(8);
   }
 
   &__text {
