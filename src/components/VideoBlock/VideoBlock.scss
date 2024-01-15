@@ -1,0 +1,57 @@
+.video-block {
+  $root: &;
+
+  position: relative;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: toRem(12);
+  }
+
+  &__title {
+    padding-right: toRem(16);
+  }
+
+  &__slider {
+    position: relative;
+    overflow: hidden;
+
+    &:after {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      width: toRem(96);
+      height: 100%;
+      background: linear-gradient(270deg, #152037 0%, rgba(21, 32, 55, 0.00) 94.44%);
+      content: "";
+    }
+
+    .swiper {
+      width: 75.6%;
+      overflow: visible;
+      margin-left: 0;
+      margin-right: 0;
+
+      @media (min-width: 640px) {
+        width: 62.5%;
+      }
+    }
+
+    .swiper-container {
+      margin-left: toRem(-8);
+      margin-right: toRem(-8);
+    }
+  }
+
+  &__slide {
+    padding: 0 toRem(8);
+  }
+
+  &__arrows {
+    display: flex;
+    gap: toRem(12);
+  }
+}

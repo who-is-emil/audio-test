@@ -1,0 +1,10 @@
+.accordion {
+  $root: &;
+
+  &__roll {
+    height: 0;
+    min-height: 0;
+    overflow: hidden;
+    will-change: transform;
+  }
+}

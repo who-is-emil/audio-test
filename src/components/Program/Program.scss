@@ -1,0 +1,70 @@
+.program {
+  $root: &;
+
+  &__title {
+    margin-bottom: toRem(8);
+  }
+
+  &__items {
+    margin: 0 auto;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    padding: toRem(8) toRem(40) toRem(8) 0;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    text-align: left;
+    color: $color-white;
+    border-color: rgba(#44536e, 0.2);
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+  }
+
+  &__number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: toRem(40);
+    height: toRem(40);
+    background-color: $color-blue;
+    color: $color-white;
+    border-radius: toRem(12);
+    margin-right: toRem(16);
+    flex-shrink: 0;
+  }
+
+  &__info {
+    display: block;
+  }
+
+  &__name {
+    display: block;
+    margin-bottom: toRem(2);
+  }
+
+  &__time {
+    display: flex;
+    align-items: center;
+    color: $color-grey;
+
+    .icon {
+      width: toRem(16);
+      height: toRem(16);
+      margin-right: toRem(4);
+    }
+  }
+
+  &__chevron {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: toRem(24);
+    height: toRem(24);
+    color: $color-grey;
+  }
+}

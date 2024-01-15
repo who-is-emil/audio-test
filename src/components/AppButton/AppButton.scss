@@ -1,0 +1,51 @@
+.app-button {
+  $root: &;
+
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: toRem(48);
+  min-width: toRem(128);
+  padding: 0 toRem(20);
+  background-color: $color-blue;
+  color: $color-white;
+  border: 0;
+  border-radius: toRem(12);
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none;
+  appearance: none;
+  overflow: hidden;
+  outline: none;
+
+  @include defaultTransition(background-color);
+
+  @include hover {
+    background-color: #3F71D5;
+  }
+
+  &:active {
+    background-color: #36C;
+  }
+
+  &--loading {
+    background-color: #36588B;
+  }
+
+  &:disabled,
+  &--disabled {
+    background-color: #36588B;
+  }
+
+  &__icon {
+    margin-right: toRem(8);
+  }
+
+  &__text {
+    position: relative;
+
+    @include text-body;
+  }
+}

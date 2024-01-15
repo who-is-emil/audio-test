@@ -25,6 +25,14 @@ h5, .h5 {
   @include h5;
 }
 
+h6, .h6 {
+  @include h6;
+}
+
+.subtitle {
+  @include subtitle;
+}
+
 .text-body {
   @include text-body;
 }

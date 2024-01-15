@@ -1,9 +1,6 @@
 <template>
   <div class="image">
-    <picture v-if="src">
-      <source v-if="srcset" :srcset="srcset">
-      <img :v-lazy-load="!disableLazy" :src="src" :alt="alt">
-    </picture>
+    <img :v-lazy-load="!disableLazy" :src="src" :alt="alt">
   </div>
 </template>
 
@@ -17,15 +14,16 @@ export default {
     },
   },
   computed: {
-    srcset() {
-      // eslint-disable-next-line global-require,import/no-dynamic-require
-      return this.data.srcset?.map((item) => require(`@/assets/images/${item}`))?.join(', ');
+    local() {
+      return !!this.data.local;
     },
     src() {
-      if (!this.data.src) { return ''; }
+      if (this.local) {
+        // eslint-disable-next-line global-require,import/no-dynamic-require
+        return require(`@/assets/images/${this.data.src}`);
+      }
 
-      // eslint-disable-next-line global-require,import/no-dynamic-require
-      return require(`@/assets/images/${this.data.src}`);
+      return this.data.src;
     },
     alt() {
       return this.data.alt || '';

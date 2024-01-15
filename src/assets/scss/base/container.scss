@@ -1,3 +1,7 @@
 .container {
   @include container;
 }
+
+.content-container {
+  @include content-container;
+}

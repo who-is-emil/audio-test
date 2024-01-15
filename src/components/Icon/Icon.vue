@@ -25,7 +25,7 @@ export default {
   computed: {
     src() {
       // eslint-disable-next-line global-require,import/no-dynamic-require
-      return require(`@/assets/icons/${this.name}`);
+      return require(`@/assets/icons/${this.name}.svg`);
     },
   },
 };

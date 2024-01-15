@@ -1,7 +1,13 @@
 $color-white: #fff;
 $color-black: #222231;
+$color-blue: #5288F4;
+$color-dark-blue: #152037;
+$color-grey: #8D95A5;
 
 $colors: (
   "white": $color-white,
-  "black": $color-black
+  "black": $color-black,
+  "blue": $color-blue,
+  "dark-blue": $color-dark-blue,
+  "grey": $color-grey
 );

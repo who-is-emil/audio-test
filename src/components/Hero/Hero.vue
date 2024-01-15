@@ -7,7 +7,7 @@
     <div class="hero__container container">
       <div class="hero__content">
         <div class="hero__logo">
-          <Icon name="logo/logo.svg"/>
+          <Icon name="logo/logo"/>
         </div>
 
         <h1 class="hero__title" v-if="title">
@@ -19,7 +19,7 @@
         </p>
 
         <div class="hero__action">
-          <Button :data="action"/>
+          <AppButton :data="action"/>
         </div>
       </div>
     </div>
@@ -29,22 +29,25 @@
 <script>
 import Image from '@/components/Image/Image.vue';
 import Icon from '@/components/Icon/Icon.vue';
-import Button from '@/components/Button/Button.vue';
+import AppButton from '@/components/AppButton/AppButton.vue';
 
 export default {
   name: 'Hero',
-  components: { Button, Icon, Image },
+  components: {
+    AppButton, Icon, Image,
+  },
   data() {
     return {
       title: 'Стальная закалка',
       text: 'Медитации для ясности ума и эмоциональной стабильности в любых ситуациях',
       background: {
+        local: true,
         src: 'hero-bg.jpg',
       },
       action: {
         title: 'Начать',
         text: 'Начать',
-        icon: '24/play.svg',
+        icon: '24/play',
       },
     };
   },

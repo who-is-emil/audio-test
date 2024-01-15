@@ -1,0 +1,27 @@
+.contacts {
+  $root: &;
+
+  position: relative;
+  border-radius: toRem(16);
+  background-color: rgba($color-white, 0.05);
+  color: $color-white;
+  padding: toRem(12) toRem(52) toRem(12) toRem(16);
+
+  &__title {
+    margin-bottom: toRem(4);
+  }
+
+  &__link {
+    color: $color-white;
+  }
+
+  &__chevron {
+    position: absolute;
+    top: 50%;
+    right: toRem(12);
+    transform: translateY(-50%);
+    width: toRem(24);
+    height: toRem(24);
+    color: $color-white;
+  }
+}
